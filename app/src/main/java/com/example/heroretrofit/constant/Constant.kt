@@ -1,6 +1,8 @@
 package com.example.heroretrofit.constant
 
 object Constant {
-    const val ID_HERO="id"
+    const val PHOTO="photo"
     const val HERO="hero"
+    const val SPEED="speed"
+    const val POWER="power"
 }

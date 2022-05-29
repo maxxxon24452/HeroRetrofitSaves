@@ -1,10 +1,10 @@
 package com.example.heroretrofit.model.data
 
 data class Powerstats(
-    val combat: String,
-    val durability: String,
-    val intelligence: String,
-    val power: String,
-    val speed: String,
-    val strength: String
+    val combat: Int,
+    val durability: Int,
+    val intelligence: Int,
+    val power: Int,
+    val speed: Int,
+    val strength: Int
 )

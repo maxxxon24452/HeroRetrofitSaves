@@ -6,16 +6,17 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
+import retrofit2.http.Query
 
 interface ApiInterface {
-    @GET("api/3202191630032155/{id}")
-    fun getMovies(@Path("id") sort: Int): Call<Hero>
+    @GET("all.json")
+    fun getMovies(@Query("apikey")  sort: String): Call<Hero>
 
 
 
     companion object {
 
-        var BASE_URL = "https://www.superheroapi.com/"
+        var BASE_URL = "https://akabab.github.io/superhero-api/api/"
 
         fun create(): ApiInterface {
 
