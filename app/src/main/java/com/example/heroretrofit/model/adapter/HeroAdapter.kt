@@ -20,9 +20,6 @@ class HeroAdapter(
     interface ItemClickListener {
         fun onClickItem(position: Int, hero: HeroItem)
     }
-    fun setData(newData: String?) {
-
-    }
 
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
